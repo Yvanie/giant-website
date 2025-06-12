@@ -135,8 +135,8 @@ body {
 }
 
 .home {
-  position: relative; /* To allow the overlay to sit on top of the image */
-  background-image: url('image/background.webp'); /* Your background image */
+  position: relative;
+  background-image: url('image/background.webp');
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -144,10 +144,10 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  padding-top: 120px; /* Adjusted padding to ensure it doesn't overlap the navbar */
+  padding-top: 150px; /* Increased padding-top to avoid overlapping navbar */
 }
 
-/* Overlay to make the background image darker and improve text visibility */
+/* Overlay */
 .home::before {
   content: "";
   position: absolute;
@@ -155,41 +155,42 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for a dark overlay */
-  z-index: 0; /* Place it behind the content */
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 0;
 }
 
-/* Container inside Home Section */
+/* Container inside Home */
 .home-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   max-width: 1200px;
-  padding: 0 5%; /* General padding */
-  z-index: 1; /* Ensure content stays above overlay */
-  flex-wrap: wrap; /* Allow stacking on smaller screens */
-  margin-bottom: 50px; /* Ensure space at the bottom to avoid overlap with footer */
+  padding: 0 5%;
+  z-index: 1;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 /* Home Content (Text and Button) */
 .home-content {
   max-width: 50%;
   text-align: left;
-  z-index: 1; /* Ensure it's above the overlay */
+  z-index: 1;
+  padding-right: 20px; /* Optional: to ensure some space between text and edge */
 }
 
 .home-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: white; /* Ensure the text is white for visibility */
+  color: white;
 }
 
 .home-content p {
   font-size: 1.2rem;
   margin-bottom: 20px;
   line-height: 1.6;
-  color: white; /* Ensure the text is white for readability */
+  color: white;
 }
 
 .home-content .btn-cta {
@@ -209,12 +210,12 @@ body {
 /* Contact Form */
 .home-contact-form {
   max-width: 40%;
-  background-color: linear-gradient(135deg, #ffffff, #f0f4f8); /* Slightly darker background for form */
+  background-color: linear-gradient(135deg, #ffffff, #f0f4f8);
   padding: 20px;
   margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 1; /* Ensure the form stays above the overlay */
+  z-index: 1;
 }
 
 .home-contact-form h3 {
@@ -248,7 +249,6 @@ body {
 .home-contact-form button:hover {
   background-color: #009bb7;
 }
-
 
 /* Footer */
 footer {
@@ -407,6 +407,54 @@ footer {
   padding-bottom: 20px;
 }
 
+/* Adjust home section padding for tablet */
+@media (max-width: 1024px) {
+   .home {
+    padding-top: 120px; /* Reduced padding-top to better fit */
+  }
+
+  /* Make the text and form stack on top of each other */
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Less padding */
+  }
+
+  /* Adjust the home-content section */
+  .home-content {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .home-content h1 {
+    font-size: 2.5rem; /* Slightly smaller text */
+  }
+
+  .home-content p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  .home-contact-form {
+    max-width: 100%;
+    margin-top: 20px; /* Adjust the margin to fit well on smaller screens */
+  }
+
+  .home-contact-form h3 {
+    font-size: 1.6rem;
+  }
+
+  .home-contact-form input,
+  .home-contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .home-contact-form button {
+    font-size: 1rem;
+  }
+}
+
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
   .top-navbar {
@@ -470,27 +518,38 @@ footer {
   .burger {
     display: flex;
   }
-  .home {
-    height: 150vh; /* Increase height on smaller screens to ensure spacing */
-    padding-top: 150px; /* Add more padding top to ensure no overlap with the navbar */
-  }
-  .home-content {
-    max-width: 100%;
-    margin-top: 0px;
-    text-align: center;
-  }
-  .home-contact-form {
-    max-width: 100%;
-    margin-top: 40px;
-    margin-bottom: 0px;
+ .home {
+    padding-top: 100px;
   }
 
+  /* Make home content and form full width */
+  .home-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+  }
+
+  /* Reduce font size for mobile */
   .home-content h1 {
-    font-size: 1.7rem;
+    font-size: 2rem; /* Smaller title for mobile */
   }
 
   .home-content p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Smaller text */
+  }
+
+  /* Adjust buttons */
+  .home-content .btn-cta {
+    padding: 10px 20px;
+  }
+
+  .home-contact-form {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .home-contact-form h3 {
+    font-size: 1.5rem; /* Smaller header */
   }
 
   .home-contact-form input,
@@ -500,19 +559,6 @@ footer {
 
   .home-contact-form button {
     font-size: 1rem;
-  }
-
-  .home-container {
-    flex-direction: column; /* Stack content vertically on mobile */
-    align-items: center; /* Center content */
-    justify-content: center;
-    padding: 0; /* Add padding on the sides to prevent content from touching the edges */
-    margin-bottom: 0;
-    margin-top: -150px
-  }
-  
-  .home-contact-form h3 {
-    font-size: 1.7rem;
   }
   /* Footer Styling */
   .footer-container {
@@ -544,4 +590,37 @@ footer {
   align-items: flex-start;
 }
 
+}
+
+@media (max-width: 480px) {
+  /* Increase padding on smaller screens for touch areas */
+  .home {
+    padding-top: 70px;
+  }
+
+  .home-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-content p {
+    font-size: 0.8rem;
+  }
+
+  /* Adjust contact form width for very small screens */
+  .home-contact-form {
+    max-width: 90%;
+  }
+
+  .home-contact-form h3 {
+    font-size: 1.4rem;
+  }
+
+  .home-contact-form input,
+  .home-contact-form textarea {
+    font-size: 0.85rem;
+  }
+
+  .home-contact-form button {
+    font-size: 0.9rem;
+  }
 }
