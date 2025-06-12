@@ -126,6 +126,21 @@ body {
   gap: 5px;
   cursor: pointer;
 }
+.burger.open span:nth-child(1) {
+  transform: rotate(45deg);
+  position: relative;
+  top: 8px;
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  position: relative;
+  top: -8px;
+}
 
 .burger span {
   width: 25px;
@@ -407,53 +422,7 @@ footer {
   padding-bottom: 20px;
 }
 
-/* Adjust home section padding for tablet */
-@media (max-width: 1024px) {
-   .home {
-    padding-top: 120px; /* Reduced padding-top to better fit */
-  }
 
-  /* Make the text and form stack on top of each other */
-  .home-container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px; /* Less padding */
-  }
-
-  /* Adjust the home-content section */
-  .home-content {
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .home-content h1 {
-    font-size: 2.5rem; /* Slightly smaller text */
-  }
-
-  .home-content p {
-    font-size: 1rem; /* Adjust paragraph size */
-  }
-
-  .home-contact-form {
-    max-width: 100%;
-    margin-top: 20px; /* Adjust the margin to fit well on smaller screens */
-  }
-
-  .home-contact-form h3 {
-    font-size: 1.6rem;
-  }
-
-  .home-contact-form input,
-  .home-contact-form textarea {
-    font-size: 0.9rem;
-  }
-
-  .home-contact-form button {
-    font-size: 1rem;
-  }
-}
 
 /* Responsive Design for Mobile */
 @media (max-width: 768px) {
@@ -518,48 +487,58 @@ footer {
   .burger {
     display: flex;
   }
- .home {
-    padding-top: 70px;
+
+  .home {
+    padding-top: 120px; /* Decrease padding-top for smaller screens */
+    height: auto; /* Allow the home section to be flexible */
   }
 
-  /* Make home content and form full width */
   .home-container {
     flex-direction: column;
-    align-items: center;
-    padding: 0 15px;
+    align-items: center; /* Center the content vertically */
+    text-align: center;
+    margin-bottom: 30px; /* Adjust margin for smaller screens */
   }
 
-  /* Reduce font size for mobile */
+  .home-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
   .home-content h1 {
-    font-size: 2rem; /* Smaller title for mobile */
+    font-size: 2.5rem; /* Slightly smaller font size for mobile */
+    margin-bottom: 15px;
   }
 
   .home-content p {
-    font-size: 0.9rem; /* Smaller text */
-  }
-
-  /* Adjust buttons */
-  .home-content .btn-cta {
-    padding: 10px 20px;
+    font-size: 1rem; /* Slightly smaller text for mobile */
+    margin-bottom: 15px;
   }
 
   .home-contact-form {
-    max-width: 100%;
-    margin-top: 20px;
+    max-width: 90%; /* Increase width of the contact form */
+    margin-top: 20px; /* Reduce space above the form */
   }
 
   .home-contact-form h3 {
-    font-size: 1.5rem; /* Smaller header */
+    font-size: 1.6rem; /* Reduce font size */
+    margin-bottom: 15px;
   }
 
   .home-contact-form input,
   .home-contact-form textarea {
+    padding: 8px;
     font-size: 0.9rem;
   }
 
   .home-contact-form button {
-    font-size: 1rem;
+    padding: 10px 20px;
   }
+
+  .home-content .btn-cta {
+    padding: 10px 20px;
+  }
+ 
   /* Footer Styling */
   .footer-container {
     flex-direction: column;
@@ -591,36 +570,33 @@ footer {
 }
 
 }
-
+/* For screens less than 480px wide (small mobile devices) */
 @media (max-width: 480px) {
-  /* Increase padding on smaller screens for touch areas */
-  .home {
-    padding-top: 70px;
+  .home-content{
+    text-align: center;
   }
-
   .home-content h1 {
-    font-size: 1.8rem;
+    font-size: 2rem; /* Even smaller for very small screens */
   }
 
   .home-content p {
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Reduce font size further */
   }
 
-  /* Adjust contact form width for very small screens */
-  .home-contact-form {
-    max-width: 90%;
-  }
-
-  .home-contact-form h3 {
-    font-size: 1.4rem;
+  .home-content .btn-cta {
+    padding: 8px 18px; /* Smaller button size for small screens */
   }
 
   .home-contact-form input,
   .home-contact-form textarea {
-    font-size: 0.85rem;
+    font-size: 0.9rem; /* Reduce font size of form fields */
   }
 
   .home-contact-form button {
-    font-size: 0.9rem;
+    padding: 10px 20px; /* Ensure button is not too large for small screens */
+  }
+
+  .home-container {
+    padding: 0 10px; /* Add more padding on small screens */
   }
 }

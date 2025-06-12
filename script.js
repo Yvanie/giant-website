@@ -17,3 +17,10 @@ window.addEventListener("scroll", function () {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scrolling
 });
+const burger = document.getElementById('burger');
+const navMenu = document.getElementById('nav-menu');
+
+burger.addEventListener('click', () => {
+  navMenu.classList.toggle('open');
+  burger.classList.toggle('open'); // Optionally animate burger icon
+});
