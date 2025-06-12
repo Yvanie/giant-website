@@ -506,7 +506,9 @@ footer {
     flex-direction: column; /* Stack content vertically on mobile */
     align-items: center; /* Center content */
     justify-content: center;
-    padding: 0 20px; /* Add padding on the sides to prevent content from touching the edges */
+    padding: 0; /* Add padding on the sides to prevent content from touching the edges */
+    margin-bottom: 0;
+    margin-top: -150px
   }
   
   .home-contact-form h3 {
