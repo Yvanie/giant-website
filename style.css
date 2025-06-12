@@ -211,6 +211,7 @@ body {
   max-width: 40%;
   background-color: linear-gradient(135deg, #ffffff, #f0f4f8); /* Slightly darker background for form */
   padding: 20px;
+  margin-top: 50px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1; /* Ensure the form stays above the overlay */
@@ -475,16 +476,17 @@ footer {
   }
   .home-content {
     max-width: 100%;
-    margin-top: 150px;
+    margin-top: 0px;
     text-align: center;
   }
   .home-contact-form {
     max-width: 100%;
     margin-top: 40px;
+    margin-bottom: 0px;
   }
 
   .home-content h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 
   .home-content p {
@@ -507,6 +509,9 @@ footer {
     padding: 0 20px; /* Add padding on the sides to prevent content from touching the edges */
   }
   
+  .home-contact-form h3 {
+    font-size: 1.7rem;
+  }
   /* Footer Styling */
   .footer-container {
     flex-direction: column;
