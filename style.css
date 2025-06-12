@@ -211,7 +211,6 @@ body {
   max-width: 40%;
   background-color: linear-gradient(135deg, #ffffff, #f0f4f8); /* Slightly darker background for form */
   padding: 20px;
-  margin-top: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   z-index: 1; /* Ensure the form stays above the overlay */
@@ -470,9 +469,13 @@ footer {
   .burger {
     display: flex;
   }
-  
+  .home {
+    height: 150vh; /* Increase height on smaller screens to ensure spacing */
+    padding-top: 150px; /* Add more padding top to ensure no overlap with the navbar */
+  }
   .home-content {
     max-width: 100%;
+    margin-top: 150px;
     text-align: center;
   }
   .home-contact-form {
