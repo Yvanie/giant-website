@@ -68,7 +68,6 @@ body {
 .top-navbar .social-icon:hover {
   color: #00c3ff;
 }
-
 /* Main Navbar - Fixed under the top navbar */
 .main-navbar {
   background-color: #1e1e2f;
@@ -108,6 +107,10 @@ body {
   font-weight: 600;  /* Increased font weight for emphasis */
   font-size: 18px;  /* Increased font size */
   transition: color 0.3s;
+}
+.main-navbar .nav a.active {
+    color: #00c3ff; 
+    font-weight: 700;
 }
 .main-navbar .nav a:hover {
   color: #00c3ff;
@@ -264,6 +267,359 @@ body {
 .home-contact-form button:hover {
   background-color: #009bb7;
 }
+
+/* Main Section Styling */
+.about-section {
+  background-color: #f1f1f1;
+  border-top: 5px solid #00c3ff;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Heading Styles */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+/* Description Text */
+.about-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* About List (icons + text) */
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.about-icon {
+  font-size: 1.6rem;
+  color: #007BFF;
+  margin-right: 15px;
+}
+
+.about-text {
+  color: #555;
+  font-weight: 500;
+}
+
+/* Button Styling */
+.about-btn {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  background-color: #00c3ff;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #009bb7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Image Styling */
+.about-img {
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+.about-btn {
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  background-color: #00c3ff;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #009bb7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Image Styling */
+.about-img {
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Section Styling */
+.services-section {
+  background-color: #f8f9fa;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Section Title */
+.services-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #007BFF;
+  margin-bottom: 15px;
+}
+
+.services-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Service Cards */
+.service-card {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Icon */
+.service-icon {
+  font-size: 3rem;
+  color: #00c3ff;
+  margin-bottom: 20px;
+}
+
+/* Service Titles */
+.service-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Service Description */
+.service-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.service-btn {
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: #00c3ff;
+  color: #fff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+  background-color: #009bb7;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Animations for Scroll (AOS effect) */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s ease-out;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Pourquoi Nous Choisir Section *//
+.why-choose-us-section {
+  background-color: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.why-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.why-subtitle {
+  font-size: 1.6rem;
+  color: #00c3ff;
+  margin-bottom: 20px;
+}
+
+.why-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.reason-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.reason-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.reason-detail {
+  font-size: 1.2rem;
+  color: #00c3ff;
+  font-weight: 700;
+}
+
+.img-fluid-about {
+  width: 100%;
+  height: auto; /* Keep aspect ratio intact */
+  object-fit: cover; /* Ensures image covers the space without stretching */
+  border-radius: 10px;
+}
+/* Section générale */
+.attractions-section {
+  background-color: #f8f9fa;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #007BFF;
+  margin-bottom: 50px;
+}
+
+/* Boîte du projet */
+.project-box {
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project-info {
+  padding: 20px;
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  color:#007BFF;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-info .btn {
+  background-color: #00c3ff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.project-info .btn:hover {
+  background-color: #008abf;
+}
+/* Section styling */
+.contact-section {
+  background-color: #f0f8ff;  /* Light blue background */
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ctn-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:#007BFF ;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background-color: #00c3ff;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #008abf;
+}
+
 
 /* Footer */
 footer {
@@ -490,7 +846,122 @@ footer {
     max-width: 80%;
     margin-top: 20px;
   }
+  
+  .about-title {
+    font-size: 2.2rem;
+  }
 
+  .about-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .about-btn {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+
+  .about-list li {
+    font-size: 1.15rem;
+  }
+
+  .about-icon {
+    font-size: 1.6rem;
+  }
+
+  .service-card {
+    padding: 30px;
+  }
+
+  .service-title {
+    font-size: 1.6rem;
+  }
+
+  .service-description {
+    font-size: 1.05rem;
+  }
+
+  .service-btn {
+    font-size: 1.1rem;
+    padding: 12px 24px;
+  }
+  .why-title {
+    font-size: 2.2rem; /* Slightly smaller title for medium screens */
+  }
+
+  .why-subtitle {
+    font-size: 1.4rem; /* Smaller subtitle */
+  }
+
+  .why-description {
+    font-size: 1rem; /* Adjust description size */
+    max-width: 500px; /* Limit description width */
+  }
+
+  .reason-box {
+    padding: 15px; /* Less padding for smaller screens */
+  }
+
+  .reason-title {
+    font-size: 1.2rem; /* Smaller reason titles */
+  }
+
+  .reason-detail {
+    font-size: 1rem; /* Smaller reason details */
+  }
+
+  .img-fluid-about {
+    border-radius: 8px; /* Smaller border radius */
+  }
+
+  /* Ensure the columns stack properly */
+  .row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+
+  .col-12 {
+    width: 100%; /* Make each column full-width */
+  }
+
+  /* Image and text should be stacked for tablets */
+  .col-md-6 {
+    width: 100%; /* Stack columns vertically */
+  }
+   img, svg {
+  vertical-align: middle;
+  width: 100%;
+  }
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 0.95rem;
+  }
+
+  .project-info .btn {
+    font-size: 0.95rem;
+  }
+  .ctn-title {
+    font-size: 2.2rem;
+  }
+
+  .section-description {
+    font-size: 1rem;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
   .footer-container {
     flex-direction: column;
     align-items: flex-start;
@@ -635,7 +1106,122 @@ footer {
   .main-navbar .container {
     padding: 0 10px;
   }
- 
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 1.05rem;
+  }
+
+  .about-btn {
+    font-size: 1.1rem;
+    padding: 11px 22px;
+  }
+
+  .about-list li {
+    font-size: 1.1rem;
+  }
+
+  .about-icon {
+    font-size: 1.5rem;
+  }
+   .service-card {
+    padding: 25px;
+  }
+ .services-title{
+    font-size: 2rem
+   }
+  .service-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-description {
+    font-size: 1rem;
+  }
+
+  .service-btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+   .why-title {
+    font-size: 2rem; /* Smaller title for mobile view */
+  }
+
+  .why-subtitle {
+    font-size: 1.3rem; /* Adjust subtitle size */
+  }
+
+  .why-description {
+    font-size: 1rem; /* Adjust description size */
+    max-width: 450px; /* Further restrict max width */
+  }
+
+  .reason-box {
+    padding: 12px; /* Less padding */
+  }
+
+  .reason-title {
+    font-size: 1.1rem; /* Smaller reason titles */
+  }
+
+  .reason-detail {
+    font-size: 0.9rem; /* Smaller reason details */
+  }
+
+  .img-fluid-about {
+    border-radius: 8px; /* Smaller border radius */
+  }
+
+  /* Ensure the columns stack properly */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   img, svg {
+  vertical-align: middle;
+  width: 100%;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-info .btn {
+    font-size: 0.9rem;
+  }
+
+  /* Mise en forme des colonnes */
+  .col-md-4 {
+    width: 100%; /* Chaque projet prend toute la largeur */
+  }
+
+  .col-md-6 {
+    width: 100%; /* Stack image and content vertically */
+  }
+   .ctn-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
   /* Footer Styling */
   .footer-container {
     flex-direction: column;
@@ -695,5 +1281,131 @@ footer {
 
   .home-container {
     padding: 0 10px; /* Add more padding on small screens */
+  }
+   .about-title {
+    font-size: 1.4rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .about-list li {
+    font-size: 1rem;
+  }
+
+  .about-icon {
+    font-size: 1.4rem;
+  }
+  .service-card {
+    padding: 20px;
+  }
+   .services-title{
+    font-size: 1.4rem
+   }
+    .service-description {
+    font-size: 0.1rem;
+  }
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+  }
+
+  .service-btn {
+    font-size: 0.6rem;
+    padding: 8px 16px;
+  }
+   .why-title {
+    font-size: 1.4rem; /* Even smaller title for mobile screens */
+  }
+
+  .why-subtitle {
+    font-size: 1.4rem; /* Adjust subtitle size */
+  }
+
+  .why-description {
+    font-size: 0.95rem; /* Smaller description font */
+    max-width: 100%; /* Ensure it spans full width */
+    margin-bottom: 20px; /* Add space between description and reasons */
+  }
+
+  .reason-box {
+    padding: 10px; /* Less padding for mobile */
+    margin-bottom: 15px; /* Space between reason boxes */
+  }
+
+  .reason-title {
+    font-size: 1rem; /* Smaller reason titles */
+  }
+
+  .reason-detail {
+    font-size: 0.95rem; /* Smaller reason details */
+  }
+
+  .img-fluid-about {
+    border-radius: 5px; /* Smaller border radius */
+  }
+
+  /* Stack image and text in mobile view */
+  .row {
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .col-6 {
+    width: 100%; /* Ensure both columns are full-width */
+  }
+ 
+  img, svg {
+  vertical-align: middle;
+  width: 100%;
+  }
+  /* Center image if necessary */
+  .img-fluid-about {
+    width:20%
+    margin-top: 20px; /* Space between image and content */
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .project-title {
+    font-size: 1.1rem;
+  }
+
+  .project-description {
+    font-size: 0.85rem;
+  }
+
+  .project-info .btn {
+    font-size: 0.85rem;
+  }
+
+  /* Colonne pleine largeur */
+  .col-md-4 {
+    width: 100%; /* Chaque projet prend toute la largeur */
+  }
+   .ctn-title {
+    font-size: 1.6rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .btn-primary {
+    font-size: 0.9rem;
+    padding: 8px 20px;
   }
 }
